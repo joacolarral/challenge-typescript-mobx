@@ -1,0 +1,15 @@
+/* Div, Input y Button que editan el Task */
+
+#editTask {
+  display: flex;
+  margin: 5px;
+}
+
+.editInput {
+  flex: 2 0 auto;
+}
+
+.editButton {
+  flex: 1 0 auto;
+  margin: 0px 5px;
+}

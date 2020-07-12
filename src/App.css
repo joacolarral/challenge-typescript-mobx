@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+button {
+  border-radius: 5px;
+  border: 1px solid rgb(164, 164, 164);
+  padding: 8px;
+  font-size: medium;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover {
+  color: white;
+  background: #009bd5;
+}
+
+button:active {
+  background-color: rgb(89, 89, 89);
+}
+
+input[type="text"] {
+  border-radius: 5px;
+  border: 1px solid rgb(164, 164, 164);
+  padding: 10px;
+}
+
+h1 {
+  letter-spacing: 1px;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#newTask {
+  margin: 1rem;
+  justify-content: space-between;
+}
