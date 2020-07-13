@@ -24,7 +24,7 @@ const ToDoList: React.FC<Props> = observer(({ tasks }) => {
         {tasks.map((task: Task, i: number) => (
           <div key={i}>
             {/* Task a hacer y tick si esta completada o no */}
-            <li className="item">
+            <li className="item task-animation">
               <input
                 type="checkbox"
                 checked={task.complete}
@@ -45,9 +45,9 @@ const ToDoList: React.FC<Props> = observer(({ tasks }) => {
                   <FontAwesomeIcon icon={faTrash} />
                 </button>
               </div>
-              {/* Despliega el completo en caso que fuese muy largo */}
-              {task.truncate && <OpenTask task={task} />}
             </li>
+            {/* Despliega el completo en caso que fuese muy largo */}
+            {task.truncate && <OpenTask task={task} />}
             {/* Despliega el input para poder editar */}
             {task.edit && <EditTask task={task} />}
           </div>

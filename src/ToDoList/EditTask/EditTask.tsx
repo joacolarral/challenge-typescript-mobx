@@ -23,7 +23,7 @@ const EditTask: React.FC<Props> = observer(({ task }) => {
   };
 
   return (
-    <div id="editTask">
+    <div className={`editTask`}>
       <input
         className="editInput"
         onChange={handleChange}

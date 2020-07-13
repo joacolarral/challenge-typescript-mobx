@@ -1,8 +1,15 @@
 /* Div, Input y Button que editan el Task */
 
-#editTask {
+.editTask {
   display: flex;
-  margin: 5px;
+  margin: 8px;
+  animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+}
+
+.text-out {
+  animation: tracking-out-contract-bck-top 0.8s
+    cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .editInput {
@@ -12,4 +19,34 @@
 .editButton {
   flex: 1 0 auto;
   margin: 0px 5px;
+}
+
+@keyframes tracking-in-expand-fwd-top {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-300px) translateY(-20px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-out-contract-bck-top {
+  0% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-300px) translateY(-20px);
+    opacity: 0;
+  }
 }

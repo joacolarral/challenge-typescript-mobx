@@ -25,7 +25,7 @@ const App: React.FC<Store> = observer(({ store }) => {
 
   // Funcion que al darle click en Agregar te agrega una nueva tarea y te resetea el input
   const handleSubmit = (): void => {
-    !!newTask && store.addToDo(shortid.generate(), newTask, false);
+    !!newTask && store.addToDo(shortid(), newTask, false);
     setNewTask("");
   };
 

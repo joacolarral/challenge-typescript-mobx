@@ -2,7 +2,7 @@ import { types, Instance, destroy } from "mobx-state-tree";
 import { TaskModel } from "./Tasks";
 import { values } from "mobx";
 
-const RootStore = types
+export const RootStore = types
   .model("Root", {
     tasks: types.optional(types.map(TaskModel), {}),
   })
