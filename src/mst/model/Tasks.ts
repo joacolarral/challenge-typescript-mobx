@@ -3,7 +3,7 @@ import { Root } from "./Root";
 
 export const TaskModel = types
   .model("Task", {
-    task: types.optional(types.string, ""),
+    task: types.string,
     complete: types.optional(types.boolean, false),
     edit: types.optional(types.boolean, false),
     truncate: types.optional(types.boolean, false),

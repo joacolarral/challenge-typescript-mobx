@@ -1,8 +1,13 @@
 import React from "react";
-import "./OpenTask.css";
 import { observer } from "mobx-react";
+import { Task } from "../../mst/model/Root";
+import "./OpenTask.css";
 
-const OpenTask = observer(({ task }: any) => {
+interface Props {
+  task: Task;
+}
+
+const OpenTask: React.FC<Props> = observer(({ task }) => {
   return (
     // Modal para ver la tarea completa
     <div className="modal-background" onClick={(e) => task.toggleTruncate()}>

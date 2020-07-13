@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import "./EditTask.css";
 import { observer } from "mobx-react";
+import { Task } from "../../mst/model/Root";
 
-const EditTask = observer(({ task }: any) => {
-  const [editableTask, setEditableTask] = useState<string | number>("");
+interface Props {
+  task: Task;
+}
 
-  // Funcion que muestra y oculta el listado
+const EditTask: React.FC<Props> = observer(({ task }) => {
+  const [editableTask, setEditableTask] = useState<string>("");
 
   // Funcion que toma el valor del input y lo setea en el useState
   const handleChange = (e: any) => {

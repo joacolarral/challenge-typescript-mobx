@@ -3,23 +3,28 @@ import ToDoList from "./ToDoList/ToDoList";
 import { observer } from "mobx-react";
 import shortid from "shortid";
 import "./App.css";
+import { Root } from "./mst/model/Root";
 
-const App = observer(({ store }: any) => {
+interface Store {
+  store: Root;
+}
+
+const App: React.FC<Store> = observer(({ store }) => {
   const [show, setShow] = useState<boolean>(false);
-  const [newTask, setNewTask] = useState<string | number>("");
+  const [newTask, setNewTask] = useState<string>("");
 
   // Funcion que muestra y oculta el listado
-  const handleClick = () => {
+  const handleClick = (): void => {
     setShow(!show);
   };
 
   // Funcion que toma el valor del input y lo setea en el useState
-  const handleChange = (e: any) => {
+  const handleChange = (e: any): void => {
     setNewTask(e.target.value);
   };
 
   // Funcion que al darle click en Agregar te agrega una nueva tarea y te resetea el input
-  const handleSubmit = () => {
+  const handleSubmit = (): void => {
     !!newTask && store.addToDo(shortid.generate(), newTask, false);
     setNewTask("");
   };

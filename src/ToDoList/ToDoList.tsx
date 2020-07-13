@@ -7,7 +7,11 @@ import { Task } from "../mst/model/Root";
 import EditTask from "./EditTask/EditTask";
 import OpenTask from "./OpenTask/OpenTask";
 
-const ToDoList = observer(({ tasks }: any) => {
+interface Props {
+  tasks: any; // Por que Task[] no funciona?
+}
+
+const ToDoList: React.FC<Props> = observer(({ tasks }) => {
   // Acorta el task si es muy largo
   const truncateTask = (task: string) => {
     return task.length > 25 ? `${task.slice(0, 25)}...` : task;
