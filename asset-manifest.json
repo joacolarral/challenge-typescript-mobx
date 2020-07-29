@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/challenge-typescript-mobx/static/css/main.156ff9d9.chunk.css",
+    "main.js": "/challenge-typescript-mobx/static/js/main.a71fb4d4.chunk.js",
+    "main.js.map": "/challenge-typescript-mobx/static/js/main.a71fb4d4.chunk.js.map",
+    "runtime-main.js": "/challenge-typescript-mobx/static/js/runtime-main.2b8256e6.js",
+    "runtime-main.js.map": "/challenge-typescript-mobx/static/js/runtime-main.2b8256e6.js.map",
+    "static/js/2.cec4f1c4.chunk.js": "/challenge-typescript-mobx/static/js/2.cec4f1c4.chunk.js",
+    "static/js/2.cec4f1c4.chunk.js.map": "/challenge-typescript-mobx/static/js/2.cec4f1c4.chunk.js.map",
+    "index.html": "/challenge-typescript-mobx/index.html",
+    "precache-manifest.8345ae916c5bafba787f7f0d824ca7e5.js": "/challenge-typescript-mobx/precache-manifest.8345ae916c5bafba787f7f0d824ca7e5.js",
+    "service-worker.js": "/challenge-typescript-mobx/service-worker.js",
+    "static/css/main.156ff9d9.chunk.css.map": "/challenge-typescript-mobx/static/css/main.156ff9d9.chunk.css.map",
+    "static/js/2.cec4f1c4.chunk.js.LICENSE.txt": "/challenge-typescript-mobx/static/js/2.cec4f1c4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2b8256e6.js",
+    "static/js/2.cec4f1c4.chunk.js",
+    "static/css/main.156ff9d9.chunk.css",
+    "static/js/main.a71fb4d4.chunk.js"
+  ]
+}
